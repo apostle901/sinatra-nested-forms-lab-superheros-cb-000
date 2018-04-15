@@ -1,0 +1,15 @@
+<h1>Team</h1>
+
+<div class="team">
+  <h3>Name: <%= @team.name %></h3><br>
+  <h4>Motto: <%= @team.motto %></h4>
+</div><br>
+
+<h1>Superheroes</h1>
+<% @superheroes.each do |superhero| %>
+  <div class="course">
+    <p>Name: <%= superhero.name %></p><br>
+    <p>Power: <%= superhero.power %></p><br>
+    <p>Bio: <%= superhero.bio %></p><br>
+  </div><br>
+<% end %>
